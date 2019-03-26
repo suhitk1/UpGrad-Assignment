@@ -12,7 +12,7 @@ for line in sys.stdin:
     key_value  = line.split('\t')   #split line, into key and value, returns a list
     line_cnt   = line_cnt+1     
 
-    #note: for simple debugging use print statements, ie:  
+    
     curr_show  = key_value[0]         #key is first item in list, indexed by 0
     value_in   = key_value[1]         #value is 2nd item
 
@@ -21,7 +21,7 @@ for line in sys.stdin:
 
         if line_cnt>1 and is_abc==1:
 	    print('{0} {1}'.format(prev_show,viewer_total))
-            #now reset lists
+            
 	is_abc = 0
         viewer_total = 0
         prev_show = curr_show  #set up previous show for the next set of input lines
